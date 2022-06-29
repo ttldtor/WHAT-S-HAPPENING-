@@ -13,8 +13,9 @@
 // @description kek
 // @icon        https://www.google.com/s2/favicons?sz=64&domain=twitter.com
 // @license     Unlicense
-// @downloadURL https://github.com/ttldtor/WHAT-S-HAPPENING-/blob/default/userscript.js
-// @updateURL   https://github.com/ttldtor/WHAT-S-HAPPENING-/blob/default/userscript.js
+// @homepageURL https://github.com/ttldtor/WHAT-S-HAPPENING-
+// @downloadURL https://raw.githubusercontent.com/ttldtor/WHAT-S-HAPPENING-/default/userscript.js
+// @updateURL   https://raw.githubusercontent.com/ttldtor/WHAT-S-HAPPENING-/default/userscript.js
 // ==/UserScript==
 
 (function(){
