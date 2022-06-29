@@ -8,7 +8,7 @@
 // @compatible  firefox
 // @match       *://*twitter.com/*
 // @grant       none
-// @version     1.0.1
+// @version     1.0.2
 // @author      ttldtor
 // @description kek
 // @icon        https://www.google.com/s2/favicons?sz=64&domain=twitter.com
