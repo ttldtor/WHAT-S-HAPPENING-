@@ -1,3 +1,8 @@
+v3.0.0
+====
+- ❤ Added `@include`
+- 🍕 userscript.js renamed to whatshappening.user.js
+
 v2.0.0
 ====
 - 🎉 Added the RU translation for the MAIN twitter \[button\]: Твитнуть -> ХУЙНУТЬ
