@@ -1,3 +1,6 @@
+Release Notes
+==
+
 v3.1.0
 
 - 😉 More translations
