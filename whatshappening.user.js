@@ -9,7 +9,7 @@
 // @match       *://*twitter.com/*
 // @include     *://*twitter.com/*
 // @grant       none
-// @version     2.0.0
+// @version     3.0.0
 // @author      ttldtor
 // @description kek
 // @icon        https://www.google.com/s2/favicons?sz=64&domain=twitter.com
