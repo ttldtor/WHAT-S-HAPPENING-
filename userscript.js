@@ -8,7 +8,7 @@
 // @compatible  firefox
 // @match       *://*twitter.com/*
 // @grant       none
-// @version     1.0.2
+// @version     2.0.0
 // @author      ttldtor
 // @description kek
 // @icon        https://www.google.com/s2/favicons?sz=64&domain=twitter.com
@@ -23,10 +23,14 @@
   
   const translations = new Map();
   
-  translations.set('Что происходит?', 'А ЧТО ПРОИСХОДИТ???');
+  translations.set('Что происходит?', 'А ЧТО ПРОИСХОДИТ???');  
   translations.set('What’s happening?', 'WHAT’S HAPPENING???');
   translations.set('Was gibt\'s Neues?', 'WAS IST LOS???');
   translations.set('Quoi de neuf ?', 'QUE SE PASSE-T-IL???');
+  
+  const buttonsTranslations = new Map();
+  
+  buttonsTranslations.set('Твитнуть', 'ХУЙНУТЬ');
   
   function update() {
     Array.from(document.querySelectorAll('div.public-DraftEditorPlaceholder-inner'))
@@ -35,6 +39,15 @@
 
         if (translation !== undefined) {
           draftEditorPlaceholder.textContent = translation;
+        }
+      });
+    
+    Array.from(document.querySelectorAll('div[role="button"] span span'))
+      .forEach(buttonTextSpan => {
+        const translation = buttonsTranslations.get(buttonTextSpan.innerHTML);
+
+        if (translation !== undefined) {
+          buttonTextSpan.innerHTML = translation;
         }
       });
   }
