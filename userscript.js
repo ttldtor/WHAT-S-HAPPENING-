@@ -7,6 +7,7 @@
 // @compatible  chrome
 // @compatible  firefox
 // @match       *://*twitter.com/*
+// @include     *://*twitter.com/*
 // @grant       none
 // @version     2.0.0
 // @author      ttldtor
