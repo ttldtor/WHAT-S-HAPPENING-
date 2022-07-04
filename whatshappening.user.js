@@ -33,6 +33,7 @@
   
   buttonsTranslations.set('Твитнуть', 'ХУЙНУТЬ');
   buttonsTranslations.set('Ответить', 'ХУЙНУТЬ В ОТВЕТ');
+  buttonsTranslations.set('Добавить еще один твит', 'ХУЙНУТЬ ЕЩЁ');
   
   function update() {
     Array.from(document.querySelectorAll('div.public-DraftEditorPlaceholder-inner'))
@@ -44,25 +45,7 @@
         }
       });
     
-    Array.from(document.querySelectorAll('div[role="button"] span span'))
-      .forEach(buttonTextSpan => {
-        const translation = buttonsTranslations.get(buttonTextSpan.innerHTML);
-
-        if (translation !== undefined) {
-          buttonTextSpan.innerHTML = translation;
-        }
-      });
-    
-    Array.from(document.querySelectorAll('div[role="button"] div span span'))
-      .forEach(buttonTextSpan => {
-        const translation = buttonsTranslations.get(buttonTextSpan.innerHTML);
-
-        if (translation !== undefined) {
-          buttonTextSpan.innerHTML = translation;
-        }
-      });
-
-    Array.from(document.querySelectorAll('a[role="link"] div span div div span span'))
+    Array.from(document.querySelectorAll('div[role="button"] span, a[role="link"] span, a[role="presentation"] span'))
       .forEach(buttonTextSpan => {
         const translation = buttonsTranslations.get(buttonTextSpan.innerHTML);
 
