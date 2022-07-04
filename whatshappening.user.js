@@ -51,6 +51,15 @@
           buttonTextSpan.innerHTML = translation;
         }
       });
+    
+    Array.from(document.querySelectorAll('a[role="link"] div span div div span span'))
+      .forEach(buttonTextSpan => {
+        const translation = buttonsTranslations.get(buttonTextSpan.innerHTML);
+
+        if (translation !== undefined) {
+          buttonTextSpan.innerHTML = translation;
+        }
+      });
   }
   
   setInterval(update, 500);  
