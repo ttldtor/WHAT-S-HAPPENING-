@@ -15,8 +15,8 @@
 // @icon        https://www.google.com/s2/favicons?sz=64&domain=twitter.com
 // @license     Unlicense
 // @homepageURL https://github.com/ttldtor/WHAT-S-HAPPENING-
-// @downloadURL https://raw.githubusercontent.com/ttldtor/WHAT-S-HAPPENING-/default/userscript.js
-// @updateURL   https://raw.githubusercontent.com/ttldtor/WHAT-S-HAPPENING-/default/userscript.js
+// @downloadURL https://raw.githubusercontent.com/ttldtor/WHAT-S-HAPPENING-/default/whatshappening.user.js
+// @updateURL   https://raw.githubusercontent.com/ttldtor/WHAT-S-HAPPENING-/default/whatshappening.user.js
 // ==/UserScript==
 
 (function(){
