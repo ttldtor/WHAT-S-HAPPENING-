@@ -9,7 +9,7 @@
 // @match       *://*twitter.com/*
 // @include     *://*twitter.com/*
 // @grant       none
-// @version     3.0.0
+// @version     3.1.0
 // @author      ttldtor
 // @description kek
 // @icon        https://www.google.com/s2/favicons?sz=64&domain=twitter.com
@@ -33,25 +33,40 @@
   
   buttonsTranslations.set('Твитнуть', 'ХУЙНУТЬ');
   buttonsTranslations.set('Ответить', 'ХУЙНУТЬ В ОТВЕТ');
+  buttonsTranslations.set('Твитнуть в ответ', 'ХУЙНУТЬ В ОТВЕТ');
   buttonsTranslations.set('Добавить еще один твит', 'ХУЙНУТЬ ЕЩЁ');
+
+  function findTranslation(translations, text) {
+    return translations.reduce((a, b) => {
+      if (a !== undefined) {
+        return a;
+      }
+
+      return b.get(text);
+    }, undefined);
+  }
+
+  function applyTranslation(element, translation) {
+    if (translation === undefined) {
+      return;
+    }
+
+    if (element.innerHTML !== undefined) {
+      element.innerHTML = translation;
+    } else if (element.textContent !== undefined) {
+      element.textContent = translation;
+    }
+  }
   
   function update() {
     Array.from(document.querySelectorAll('div.public-DraftEditorPlaceholder-inner'))
       .forEach(draftEditorPlaceholder => {
-        const translation = translations.get(draftEditorPlaceholder.textContent);
-
-        if (translation !== undefined) {
-          draftEditorPlaceholder.textContent = translation;
-        }
+        applyTranslation(draftEditorPlaceholder, findTranslation([translations, buttonsTranslations], draftEditorPlaceholder.textContent));
       });
     
     Array.from(document.querySelectorAll('div[role="button"] span, a[role="link"] span, a[role="presentation"] span'))
       .forEach(buttonTextSpan => {
-        const translation = buttonsTranslations.get(buttonTextSpan.innerHTML);
-
-        if (translation !== undefined) {
-          buttonTextSpan.innerHTML = translation;
-        }
+        applyTranslation(buttonTextSpan, findTranslation([buttonsTranslations], buttonTextSpan.innerHTML));
       });
   }
   
