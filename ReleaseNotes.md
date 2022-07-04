@@ -1,6 +1,11 @@
 Release Notes
 ==
 
+v3.2.0
+
+- 🤣 Added some badges
+- 🤣 Added the translation for 'Твитнуть все'
+
 v3.1.0
 
 - 😉 More translations

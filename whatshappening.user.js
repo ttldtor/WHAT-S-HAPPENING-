@@ -9,7 +9,7 @@
 // @match       *://*twitter.com/*
 // @include     *://*twitter.com/*
 // @grant       none
-// @version     3.1.0
+// @version     3.2.0
 // @author      ttldtor
 // @description kek
 // @icon        https://www.google.com/s2/favicons?sz=64&domain=twitter.com
@@ -34,6 +34,7 @@
   buttonsTranslations.set('Твитнуть', 'ХУЙНУТЬ');
   buttonsTranslations.set('Ответить', 'ХУЙНУТЬ В ОТВЕТ');
   buttonsTranslations.set('Твитнуть в ответ', 'ХУЙНУТЬ В ОТВЕТ');
+  buttonsTranslations.set('Твитнуть все', 'ХУЙНУТЬ ВСЁ');
   buttonsTranslations.set('Добавить еще один твит', 'ХУЙНУТЬ ЕЩЁ');
 
   function findTranslation(translations, text) {
