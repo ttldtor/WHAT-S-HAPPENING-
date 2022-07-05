@@ -1,6 +1,11 @@
 Release Notes
 ==
 
+v3.3.0
+
+- 🎁 Changed the description
+- ➕ Added a CI\CD workflow
+
 v3.2.0
 
 - 🤣 Added some badges

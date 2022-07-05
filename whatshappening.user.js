@@ -9,9 +9,9 @@
 // @match       *://*twitter.com/*
 // @include     *://*twitter.com/*
 // @grant       none
-// @version     3.2.0
+// @version     3.3.0
 // @author      ttldtor
-// @description kek
+// @description This extension changes placeholders on edit fields, as well as the text on some buttons.
 // @icon        https://www.google.com/s2/favicons?sz=64&domain=twitter.com
 // @license     Unlicense
 // @homepageURL https://github.com/ttldtor/WHAT-S-HAPPENING-
