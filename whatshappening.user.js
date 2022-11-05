@@ -9,7 +9,7 @@
 // @match       *://*twitter.com/*
 // @include     *://*twitter.com/*
 // @grant       none
-// @version     3.3.0
+// @version     3.4.0
 // @author      ttldtor
 // @description This extension changes placeholders on edit fields, as well as the text on some buttons.
 // @icon        https://www.google.com/s2/favicons?sz=64&domain=twitter.com
@@ -36,6 +36,7 @@
   buttonsTranslations.set('Твитнуть в ответ', 'ХУЙНУТЬ В ОТВЕТ');
   buttonsTranslations.set('Твитнуть все', 'ХУЙНУТЬ ВСЁ');
   buttonsTranslations.set('Добавить еще один твит', 'ХУЙНУТЬ ЕЩЁ');
+  buttonsTranslations.set('Читать', 'СТАТЬ ПОДПИЩЩЕКОМ!');
 
   function findTranslation(translations, text) {
     return translations.reduce((a, b) => {

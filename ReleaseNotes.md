@@ -1,6 +1,10 @@
 Release Notes
 ==
 
+v3.4.0
+
+- 🎁 Читать -> СТАТЬ ПОДПИЩЩЕКОМ!
+
 v3.3.0
 
 - 🎁 Changed the description
