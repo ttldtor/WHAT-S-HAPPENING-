@@ -9,7 +9,7 @@
 // @match       *://*twitter.com/*
 // @include     *://*twitter.com/*
 // @grant       none
-// @version     3.4.0
+// @version     3.6.0
 // @author      ttldtor
 // @description This extension changes placeholders on edit fields, as well as the text on some buttons.
 // @icon        https://www.google.com/s2/favicons?sz=64&domain=twitter.com
@@ -28,6 +28,7 @@
   translations.set('What’s happening?', 'WHAT’S HAPPENING???');
   translations.set('Was gibt\'s Neues?', 'WAS IST LOS???');
   translations.set('Quoi de neuf ?', 'QUE SE PASSE-T-IL???');
+  translations.set('Поиск в твиттере', 'ПОШУК!');
   
   const buttonsTranslations = new Map();
   
@@ -37,6 +38,9 @@
   buttonsTranslations.set('Твитнуть все', 'ХУЙНУТЬ ВСЁ');
   buttonsTranslations.set('Добавить еще один твит', 'ХУЙНУТЬ ЕЩЁ');
   buttonsTranslations.set('Читать', 'СТАТЬ ПОДПИЩЩЕКОМ!');
+  buttonsTranslations.set('Читаю', 'УЖЕ ПОДПИЩЩЕК!');
+  buttonsTranslations.set('Перестать читать', 'ДОСТАТОЧНО!');
+  buttonsTranslations.set('Начать продвижение', 'СДЕЛАТЬ ПОТРАЧЕНО!');
 
   function findTranslation(translations, text) {
     return translations.reduce((a, b) => {
